@@ -5,6 +5,7 @@ import { DatePipe } from '@angular/common';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ApplicationRoutingModule } from './application-routing.module';
+import { ApplicationRouterActivate } from './application-router.activate';
 
 // PRIMENG MODULES
 import { MenubarModule } from 'primeng/menubar';
@@ -31,27 +32,20 @@ import {SpeedDialModule} from 'primeng/speeddial';
 
 
 // COMPONENTS
-
+import { DashboardComponent } from 'src/app/components/application/dashboard/dashboard.component';
+import { ApplicationComponent } from './application.component';
 import { AppTopBarComponent } from './application.topbar.component';
 import { AppFooterComponent } from './application.footer.component';
 import { AppMenuComponent } from './application.sidebar.component';
-import { ApplicantInformationComponent } from 'src/app/components/application/applicant-information/applicant-information.component';
 import { CheckboxModule } from 'primeng/checkbox';
 
 @NgModule({
   declarations: [
     ApplicationComponent,
     DashboardComponent,
-    UsersComponent,
-    
-    // shared components
-    // ApplicantFormComponent
-
-    //Applicationg Layout Components
     AppTopBarComponent,
     AppMenuComponent,
     AppFooterComponent,
-
   ],
   imports: [
     CommonModule,
