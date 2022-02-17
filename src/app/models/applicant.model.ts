@@ -1,0 +1,32 @@
+export class ApplicantModel {
+  id: number = 0;
+  user_id: number = 0;
+  user: any = null;
+  applicant_number: string = '';
+  first_name: string = '';
+  surname: string = '';
+  middle_name: string = '';
+  extension_name: string = '';
+  cs_id_number: string = '';
+  date_of_birth: any;
+  place_of_birth: string = '';
+  gender: string = '';
+  civil_status: string = '';
+  height: number = 0;
+  weight: number = 0;
+  blood_type: string = '';
+  gsis_id_number: string = '';
+  pagibig_number: string = '';
+  philhealht_number: string = '';
+  tin_number: string = '';
+  agency_employee_number: string = '';
+  citizenship: string = '';
+  resident_address: string = '';
+  resident_address_zip_code: string = '';
+  perpanent_address: string = '';
+  perpanent_address_zipcode: string = '';
+  telephone: string = '';
+  mobile: string = '';
+  email: string = '';
+  skills: string = '';
+}

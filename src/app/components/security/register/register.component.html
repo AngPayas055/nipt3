@@ -1,0 +1,34 @@
+<br /><br /><br />
+<div fxLayout="row" fxLayout.xs="column">
+    <div fxFlex="30"></div>
+    <div fxFlex="40">
+        <p-card header="Register">
+            <div class="p-fluid p-formgrid p-grid">
+                <div class="p-field p-col">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.name">
+                </div>
+                <div class="p-field p-col">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" pInputText [disabled]="isProcessing"
+                        [(ngModel)]="registerModel.email">
+                </div>
+                <div class="p-field p-col">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" pInputText [disabled]="isProcessing"
+                        [(ngModel)]="registerModel.password">
+                </div>
+                <div class="p-field p-col">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input id="confirmPassword" type="password" pInputText [disabled]="isProcessing"
+                        [(ngModel)]="registerModel.password_confirmation">
+                </div>
+            </div>
+            <br />
+            <br />
+            <button pButton type="button" label="Register" (click)="register()" [disabled]="isProcessing"></button>
+        </p-card>
+    </div>
+    <div fxFlex="30"></div>
+</div>
+<br /><br /><br />

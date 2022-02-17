@@ -1,0 +1,35 @@
+.layout-footer {
+  padding: 2rem;
+  font-size: 1rem;
+  background-color: var(--surface-a);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-color);
+      padding-right: .5rem;
+  }
+  
+  a {
+    color: var(--text-color);
+  }
+
+  .layout-footer-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .layout-footer-right {
+      a {
+          i {
+              color: var(--text-secondary-color);
+              font-size: 1.7rem;
+              padding: 0 .5rem;
+          }
+      }
+  }
+}
