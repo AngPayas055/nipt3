@@ -10,7 +10,7 @@ declare let gtag: Function;
     template: `
         <div class="layout-sidebar" [ngClass]="{'active': active}">
             <a routerLink="#" class="logo">
-                <img alt="logo" src="assets/images/SR_VERSION_3.png" />
+                <img alt="logo" src="assets/images/berben.png" />
             </a>
             <div class="layout-menu">
                 <div class="menu-category">General</div>
@@ -40,15 +40,10 @@ export class AppMenuComponent {
     @Input() active!: boolean;
 
     adminSidNavItems: any[] = [
-        {name: 'Applicant', link: '/application/applicant-list'},
         {name: 'Users', link: '/application/users'},
     ]
 
-    applicantSideNavItems: any[] = [
-        {name: 'Profile', link: '/applicant/applicant-information'},
-    ]
-
-    sideNavItems: any [] = this.applicantSideNavItems;
+    sideNavItems: any [] = this.adminSidNavItems;
 
     scrollable = true;
 
