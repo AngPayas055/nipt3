@@ -13,7 +13,6 @@ declare let gtag: Function;
                 <img alt="logo" src="assets/images/berben.png" />
             </a>
             <div class="layout-menu">
-                <div class="menu-category">General</div>
                 <div class="menu-items" *ngFor="let item of sideNavItems">
                     <a routerLink="{{item.link}}" (click)="removeId()" routerLinkActive="router-link-exact-active">{{item.name}} </a>
                 </div>
@@ -40,7 +39,7 @@ export class AppMenuComponent {
     @Input() active!: boolean;
 
     adminSidNavItems: any[] = [
-        {name: 'Users', link: '/application/users'},
+        // {name: 'Users', link: '/application/users'},
     ]
 
     sideNavItems: any [] = this.adminSidNavItems;
