@@ -13,12 +13,13 @@ export class ApplicationRouterActivate implements CanActivate {
             this.router.navigate(["/security/login"]);
             return false;
         } else {
-            if (localStorage.getItem("user_type") == "Office")
-                return true;
-            else {
-                this.router.navigate(["/security/login"]);
-                return false;
-            } 
+            // if (localStorage.getItem("user_type") == "Office")
+            //     return true;
+            // else {
+            //     this.router.navigate(["/security/login"]);
+            //     return false;
+            // } 
+            return true;
         }
     }
 }

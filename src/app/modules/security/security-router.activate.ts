@@ -12,16 +12,18 @@ export class SecurityRouterActivate implements CanActivate {
         if (localStorage.getItem("token") == null) {
             return true;
         } else {
-            if (localStorage.getItem("user_type") == "Applicant") {
-                this.router.navigate(["/applicant"]);
-                return false;
-            } else if (localStorage.getItem("user_type") == "Office") {
-                this.router.navigate(["/application"]);
-                return false;
-            }
-            else {
-                return true;
-            }
+            // if (localStorage.getItem("user_type") == "Applicant") {
+            //     this.router.navigate(["/application"]);
+            //     return false;
+            // } else if (localStorage.getItem("user_type") == "Office") {
+            //     this.router.navigate(["/application"]);
+            //     return false;
+            // }
+            // else {
+            //     return true;
+            // }
+            this.router.navigate(["/application"]);
+            return false;
         }
     }
 }

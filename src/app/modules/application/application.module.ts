@@ -38,6 +38,7 @@ import { AppTopBarComponent } from './application.topbar.component';
 import { AppFooterComponent } from './application.footer.component';
 import { AppMenuComponent } from './application.sidebar.component';
 import { CheckboxModule } from 'primeng/checkbox';
+import { UsersComponent } from 'src/app/components/application/users/users.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CheckboxModule } from 'primeng/checkbox';
     AppTopBarComponent,
     AppMenuComponent,
     AppFooterComponent,
+    UsersComponent
   ],
   imports: [
     CommonModule,
