@@ -34,7 +34,7 @@ jobs:
       - name: build
         run: |
           npm i
-          npm run build
+          npm run build -- -c production
       - name: deploy
         run: |
           aws configure set aws_access_key_id "${{ secrets.AWS_ID }}"
