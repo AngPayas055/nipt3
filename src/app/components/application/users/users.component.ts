@@ -7,7 +7,6 @@ import { UserListService } from 'src/app/services/application/users/user-list.se
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-
   constructor(
     private userListService: UserListService
   ) { }
