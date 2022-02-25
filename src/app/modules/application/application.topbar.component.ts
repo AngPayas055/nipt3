@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
             <a class="menu-button" (click)="onMenuButtonClick($event)">
                 <i class="pi pi-bars"></i>
             </a>
-            <!--<div class="app-theme" [pTooltip]="'button'" tooltipPosition="bottom">
-                <img [src]="'assets/showcase/images/themes/' + logoMap[config.theme]" />
-            </div> -->
+            <div class="">
+                Warehouse # - {{ dateToday | date:'fullDate' }}
+            </div>
             <ul #topbarMenu class="topbar-menu">
-                <li><a>{{ user_email }}</a></li>
+                <li><a>{{ user_type }}</a></li>
                 <li><a (click)="logout()">Logout</a></li>
             </ul>
         </div>
@@ -25,6 +25,8 @@ export class AppTopBarComponent implements OnInit {
     @ViewChild('topbarMenu') topbarMenu!: ElementRef;
 
     user_email: any = localStorage.getItem('email');
+    dateToday: any = localStorage.getItem('dateToday');
+    user_type: any = localStorage.getItem('user_type');
 
     constructor(private router: Router) { }
 

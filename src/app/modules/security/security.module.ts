@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -12,6 +12,7 @@ import { CardModule } from 'primeng/card';
 import { ToastModule } from 'primeng/toast';
 import {DividerModule} from 'primeng/divider';
 import { TabViewModule } from 'primeng/tabview';
+import {CalendarModule} from 'primeng/calendar';
 
 import { SecurityComponent } from './security.component';
 import { LoginComponent } from '../../components/security/login/login.component';
@@ -38,10 +39,12 @@ import { SecurityRouterActivate } from './security-router.activate';
     CardModule,
     ToastModule,
     DividerModule,
-    TabViewModule
+    TabViewModule,
+    CalendarModule
   ],
   providers: [
-    SecurityRouterActivate
+    SecurityRouterActivate,
+    DatePipe,
   ]
 
 })

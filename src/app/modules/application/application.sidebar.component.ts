@@ -10,10 +10,10 @@ declare let gtag: Function;
     template: `
         <div class="layout-sidebar" [ngClass]="{'active': active}">
             <a routerLink="#" class="logo">
-                <img alt="logo" src="assets/images/SR_VERSION_3.png" />
+                <img alt="logo" src="../../../assets/images/berben.png"/>
             </a>
             <div class="layout-menu">
-                <div class="menu-category">General</div>
+                <div class="menu-category">Menu : </div>
                 <div class="menu-items" *ngFor="let item of sideNavItems">
                     <a routerLink="{{item.link}}" (click)="removeId()" routerLinkActive="router-link-exact-active">{{item.name}} </a>
                 </div>
@@ -40,8 +40,12 @@ export class AppMenuComponent {
     @Input() active!: boolean;
 
     adminSidNavItems: any[] = [
-        {name: 'Applicant', link: '/application/applicant-list'},
-        {name: 'Users', link: '/application/users'},
+        {name: 'Sales/ Marketing', link: '/application/applicant-list'},
+        {name: 'Yard Management', link: '/application/users'},
+        {name: 'Receiving', link: '/application/applicant-list'},
+        {name: 'Storage', link: '/application/users'},
+        {name: 'Dispatching', link: '/application/applicant-list'},
+        {name: 'Administration', link: '/application/users'},
     ]
 
     applicantSideNavItems: any[] = [

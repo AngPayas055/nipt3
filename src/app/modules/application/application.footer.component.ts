@@ -5,8 +5,8 @@ import {Component} from '@angular/core';
     template: `
         <div class="layout-footer">
             <div class="layout-footer-left">
-                <span>Smart Recruit </span>
-                <a href="#">&copy; Philippine Overseas Employment Administration - 2022</a>
+                <span>BERBEN </span>
+                <a href="#">&copy; 2022</a>
             </div>
 
             <div class="layout-footer-right">
