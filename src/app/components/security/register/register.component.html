@@ -5,6 +5,10 @@
         <p-card header="Register">
             <div class="p-fluid p-formgrid p-grid">
                 <div class="p-field p-col">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.username">
+                </div>
+                <div class="p-field p-col">
                     <label for="name">Name</label>
                     <input id="name" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.name">
                 </div>
@@ -12,6 +16,10 @@
                     <label for="email">Email</label>
                     <input id="email" type="text" pInputText [disabled]="isProcessing"
                         [(ngModel)]="registerModel.email">
+                </div>
+                <div class="p-field p-col">
+                    <label for="user_type">User Type</label>
+                    <input id="user_type" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.user_type">
                 </div>
                 <div class="p-field p-col">
                     <label for="password">Password</label>

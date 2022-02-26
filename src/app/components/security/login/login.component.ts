@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
 
   isProcessing: boolean = false;
   loginModel: LoginModel = {
-    email: "",
+    username: "",
     password: ""
   };
 
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
         if (data != null) {
           localStorage.setItem('token', data.token);
           localStorage.setItem('user_id', data.data.id);
-          localStorage.setItem('user_type', 'Office');
+          localStorage.setItem('user_type', data.data.user_type);
           localStorage.setItem('email', data.data.email);
           localStorage.setItem('dateToday', this.dateToday);
           this.messageService.add({
@@ -48,8 +48,7 @@ export class LoginComponent implements OnInit {
             detail: 'You have successfully logged in your account.'
           })
 
-          // location.reload();
-          this.router.navigate(['/application/dashboard'])
+          location.reload();
         }
       }, (error) => {
         this.messageService.add({

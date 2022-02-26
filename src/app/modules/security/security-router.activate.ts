@@ -12,10 +12,10 @@ export class SecurityRouterActivate implements CanActivate {
         if (localStorage.getItem("token") == null) {
             return true;
         } else {
-            if (localStorage.getItem("user_type") == "Applicant") {
+            if (localStorage.getItem("user_type") === 'User') {
                 this.router.navigate(["/applicant"]);
                 return false;
-            } else if (localStorage.getItem("user_type") == "Office") {
+            } else if (localStorage.getItem("user_type") === 'Admin') {
                 this.router.navigate(["/application"]);
                 return false;
             }

@@ -1,6 +1,8 @@
 export class RegisterModel {
-    name: string = "";
-    email: string = "";
-    password: string = "";
-    password_confirmation: string = "";
+    username: string = '';
+    name: string = '';
+    email: string = '';
+    user_type: string = '';
+    password: string = '';
+    password_confirmation: string = '';
 }

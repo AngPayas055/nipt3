@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
             <a class="menu-button" (click)="onMenuButtonClick($event)">
                 <i class="pi pi-bars"></i>
             </a>
-            <div class="">
+            <div class="p-5">
                 Warehouse # - {{ dateToday | date:'fullDate' }}
             </div>
             <ul #topbarMenu class="topbar-menu">
