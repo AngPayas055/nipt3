@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
 
-  // APIURLHost: 'http://127.0.0.1:8000',
-  APIURLHost: 'https://berben-api.hiro-test.net'
+  APIURLHost: 'http://127.0.0.1:8000',
+  // APIURLHost: 'https://berben-api.hiro-test.net'
 };
 
 /*
