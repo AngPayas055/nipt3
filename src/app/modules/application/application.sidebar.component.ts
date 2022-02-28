@@ -25,10 +25,10 @@ declare let gtag: Function;
                         <a tabindex="0" (click)="toggleSubmenu($event, '/administration')">Administration</a>
                         <div [@submenu]="isSubmenuActive('/administration') ? 'visible': 'hidden'">
                             <ul>
-                                <li><a routerLink="/applicant/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Modules</a></li>
-                                <li><a routerLink="/applicant/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Users</a></li>
-                                <li><a routerLink="/applicant/user"routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Companies</a></li>
-                                <li><a routerLink="/applicant/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Branches</a></li>
+                                <li><a routerLink="/application/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Modules</a></li>
+                                <li><a routerLink="/application/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Users</a></li>
+                                <li><a routerLink="/application/user"routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Companies</a></li>
+                                <li><a routerLink="/application/user" routerLinkActive="router-link-exact-active" [routerLinkActiveOptions]="{exact:true}">Branches</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ export class AppMenuComponent {
     ]
 
     userSideNavItems: any[] = [
-        {name: 'Profile', link: '/applicant/applicant-information'},
+        // {name: 'Profile', link: '/applicant/applicant-information'},
     ]
 
     userSideNavSubItems: any[] = [

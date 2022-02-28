@@ -15,13 +15,6 @@ const routes: Routes = [
       { path: '', canActivate: [ApplicationRouterActivate], component:DashboardComponent },
       { path: 'dashboard', canActivate: [ApplicationRouterActivate], component:DashboardComponent },
       { path: 'users', canActivate: [ApplicationRouterActivate], component:UsersComponent },
-      // { path: 'applicant-family-background', canActivate: [ApplicationRouterActivate], component:ApplicantFamilyBackgroundListComponent},
-      // { path: 'applicant-educational-background', canActivate: [ApplicationRouterActivate], component:ApplicantEducBackgroundListComponent},
-      // { path: 'applicant-civil-service', canActivate: [ApplicationRouterActivate], component:ApplicantCivilServiceListComponent},
-      // { path: 'applicant-work-experience', canActivate: [ApplicationRouterActivate], component:ApplicantWorkExperienceListComponent},
-      // { path: 'applicant-training-program', canActivate: [ApplicationRouterActivate], component:ApplicantTrainingProgramListComponent},
-      // { path: 'applicant-other-info', canActivate: [ApplicationRouterActivate], component:ApplicantOtherInfoListComponent},
-      // { path: 'applicant-gov-issued-id', canActivate: [ApplicationRouterActivate], component:ApplicantGovernmentIssuedIdListComponent}
     ]
   }
 ];

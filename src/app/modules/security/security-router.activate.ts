@@ -13,7 +13,7 @@ export class SecurityRouterActivate implements CanActivate {
             return true;
         } else {
             if (localStorage.getItem("user_type") === 'User') {
-                this.router.navigate(["/applicant"]);
+                this.router.navigate(["/application"]);
                 return false;
             } else if (localStorage.getItem("user_type") === 'Admin') {
                 this.router.navigate(["/application"]);

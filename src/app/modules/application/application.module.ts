@@ -76,8 +76,6 @@ import { UsersComponent } from 'src/app/components/application/users/users.compo
     SpeedDialModule
   ], 
   exports: [
-    // applicant components
-    //Applicationg Layout Components
     AppTopBarComponent,
     AppMenuComponent,
     AppFooterComponent,
