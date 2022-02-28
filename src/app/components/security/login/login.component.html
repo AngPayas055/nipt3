@@ -8,8 +8,8 @@
                         <div class="col-12 md:col-8 lg:col-8">
                             <span class="p-float-label p-input-icon-left">
                                 <i class="pi pi-user icons-color"></i>
-                                <input type="text" id="email" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="loginModel.email"> 
-                                <label for="inputtext-left" class="text-500">Username or Email</label>
+                                <input type="text" id="email" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="loginModel.username"> 
+                                <label for="inputtext-left" class="text-500">Username</label>
                             </span>
                         </div>
                         <div class="col-12 md:col-8 lg:col-8">
@@ -17,7 +17,15 @@
                                 <i class="pi pi-lock icons-color"></i>
                                 <input type="password" id="password" pInputText class="p-inputtext-md" [disabled]="isProcessing"
                                 [(ngModel)]="loginModel.password"> 
-                                <label for="inputtext-left" class="text-5">Password</label>
+                                <label for="inputtext-left" class="text-500">Password</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-user icons-color"></i>
+                                <p-calendar inputId="basic" class="p-inputtext-sm" dateFormat="yy-mm-dd"
+                                [(ngModel)]="dateToday"></p-calendar >
+                                <label for="inputtext-left" class="text-500">Current Date</label>
                             </span>
                         </div>
                         <div class="col-12 md:col-8 lg:col-8">
