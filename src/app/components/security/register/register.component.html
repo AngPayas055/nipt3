@@ -1,42 +1,62 @@
-<br /><br /><br />
-<div fxLayout="row" fxLayout.xs="column">
-    <div fxFlex="30"></div>
-    <div fxFlex="40">
-        <p-card header="Register">
-            <div class="p-fluid p-formgrid p-grid">
-                <div class="p-field p-col">
-                    <label for="username">Username</label>
-                    <input id="username" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.username">
-                </div>
-                <div class="p-field p-col">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.name">
-                </div>
-                <div class="p-field p-col">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" pInputText [disabled]="isProcessing"
-                        [(ngModel)]="registerModel.email">
-                </div>
-                <div class="p-field p-col">
-                    <label for="user_type">User Type</label>
-                    <input id="user_type" type="text" pInputText [disabled]="isProcessing" [(ngModel)]="registerModel.user_type">
-                </div>
-                <div class="p-field p-col">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" pInputText [disabled]="isProcessing"
-                        [(ngModel)]="registerModel.password">
-                </div>
-                <div class="p-field p-col">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input id="confirmPassword" type="password" pInputText [disabled]="isProcessing"
-                        [(ngModel)]="registerModel.password_confirmation">
+
+<main class="main-section">
+    <div class="register-section">
+        <p-card>
+            <h2>Register</h2>
+            <div class="grid mt-2">
+                <div class="col-12 md:col-12 lg:col-12">
+                    <div class="p-fluid grid flex align-items-center justify-content-center flex-direction-column">
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-user-edit icons-color"></i>
+                                <input type="text" id="username" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="registerModel.username"> 
+                                <label for="inputtext-left" class="text-500">Username</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-user-edit icons-color"></i>
+                                <input type="text" id="name" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="registerModel.name"> 
+                                <label for="inputtext-left" class="text-500">Name</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-envelope icons-color"></i>
+                                <input type="text" id="email" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="registerModel.email"> 
+                                <label for="inputtext-left" class="text-500">Email</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-users icons-color"></i>
+                                <input type="text" id="user_type" pInputText class="p-inputtext-md" [disabled]="isProcessing" [(ngModel)]="registerModel.user_type"> 
+                                <label for="inputtext-left" class="text-500">User Type</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-lock icons-color"></i>
+                                <input type="password" id="password" pInputText class="p-inputtext-md" [disabled]="isProcessing"
+                                [(ngModel)]="registerModel.password"> 
+                                <label for="inputtext-left" class="text-500">Password</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <span class="p-float-label p-input-icon-left">
+                                <i class="pi pi-lock icons-color"></i>
+                                <input type="password" id="passowrd_confirm" pInputText class="p-inputtext-md" [disabled]="isProcessing"
+                                [(ngModel)]="registerModel.password_confirmation"> 
+                                <label for="inputtext-left" class="text-500">Confirm Password</label>
+                            </span>
+                        </div>
+                        <div class="col-12 md:col-8 lg:col-8">
+                            <button pButton type="button" label="Register" (click)="register()" [disabled]="isProcessing"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br />
-            <br />
-            <button pButton type="button" label="Register" (click)="register()" [disabled]="isProcessing"></button>
-        </p-card>
+            <p-toast></p-toast>
+        </p-card> 
     </div>
-    <div fxFlex="30"></div>
-</div>
-<br /><br /><br />
+</main>
