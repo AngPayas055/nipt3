@@ -27,11 +27,13 @@ export class RegisterService {
       let url = this.defaultAPIURLHost + '/api/register';
       this.httpClient.post(url, registerModel , this.options).subscribe(
         response => {
+          console.log(response);
           let data = response;
           observer.next([true, data]);
           observer.complete();
         },
         error => {
+          console.log(error);
           observer.next([false, error["error"].error_description]);
           observer.complete();
         });
